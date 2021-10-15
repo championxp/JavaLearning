@@ -32,6 +32,7 @@ public class Student implements Runnable{
         start();
         Thread.sleep(arriveTime);
         arrive();
+        // 倒计数减 1 ，但会继续执行线程中剩下任务
         countDownLatch.countDown();
         active();
     }

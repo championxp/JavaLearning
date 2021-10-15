@@ -23,6 +23,7 @@ public class Main {
         for (Student student : students) {
             executor.execute(student);
         }
+        // 等待，直到倒计数完，然后主线程继续执行
         countDownLatch.await();
         System.out.println("全员到齐，出发！");
         executor.shutdown();

@@ -1,7 +1,6 @@
 package cn.concurrent.countdownlatch;
 
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ThreadFactory;
 
 public class StudentFactory {
 
